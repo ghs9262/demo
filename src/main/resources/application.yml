@@ -1,0 +1,32 @@
+server:
+  port: 9091
+student:
+  name: 耿宏胜
+  age: 100000
+spring:
+  data:
+    solr:
+      host: http://127.0.0.1:8983/solr/test
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    password: oracle
+    username: ghs
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: redis
+  mail:
+    host: smtp.163.com
+    username: g100679262@163.com
+    password: atsko2010
+    default-encoding: UTF-8
+    port: 25
+
+mybatis:
+  mapper-locations: "classpath:mapper/*.xml"
