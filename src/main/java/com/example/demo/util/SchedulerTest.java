@@ -1,6 +1,5 @@
 package com.example.demo.util;
 
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
@@ -17,7 +16,7 @@ public class SchedulerTest {
 
         private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-        @Scheduled(cron="*/6 * * * * ?")
+       // @Scheduled(cron="*/6 * * * * ?")
 
         private void process(){
 
@@ -26,7 +25,7 @@ public class SchedulerTest {
         }
 
 
-        @Scheduled(fixedRate = 6000)
+       // @Scheduled(fixedRate = 6000)
         public void reportCurrentTime() {
 
             System.out.println("现在时间：" + dateFormat.format(new Date()));

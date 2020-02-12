@@ -1,8 +1,9 @@
 package com.example.demo.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class CapRole {
+public class CapRole implements Serializable {
     private String roleId;
 
     private String tenantId;
